@@ -18,10 +18,5 @@
   "homepage": "https://github.com/mapbox/mapbox-gl-shaders#readme",
   "dependencies": {
     "brfs": "^1.4.0"
-  },
-  "browserify": {
-    "transform": [
-      "brfs"
-    ]
   }
 }

@@ -1,60 +1,56 @@
-var fs = require('fs');
-var path = require('path');
-
-// readFileSync calls must be written out long-form for brfs.
 module.exports = {
   debug: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/debug.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/debug.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/debug.fragment.glsl'),
+    vertexSource: require('src/debug.vertex.glsl')
   },
   fill: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/fill.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/fill.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/fill.fragment.glsl'),
+    vertexSource: require('src/fill.vertex.glsl')
   },
   circle: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/circle.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/circle.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/circle.fragment.glsl'),
+    vertexSource: require('src/circle.vertex.glsl')
   },
   line: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/line.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/line.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/line.fragment.glsl'),
+    vertexSource: require('src/line.vertex.glsl')
   },
   linepattern: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/linepattern.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/linepattern.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/linepattern.fragment.glsl'),
+    vertexSource: require('src/linepattern.vertex.glsl')
   },
   linesdfpattern: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/linesdfpattern.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/linesdfpattern.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/linesdfpattern.fragment.glsl'),
+    vertexSource: require('src/linesdfpattern.vertex.glsl')
   },
   outline: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/outline.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/outline.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/outline.fragment.glsl'),
+    vertexSource: require('src/outline.vertex.glsl')
   },
   outlinepattern: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/outlinepattern.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/outlinepattern.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/outlinepattern.fragment.glsl'),
+    vertexSource: require('src/outlinepattern.vertex.glsl')
   },
   pattern: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/pattern.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/pattern.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/pattern.fragment.glsl'),
+    vertexSource: require('src/pattern.vertex.glsl')
   },
   raster: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/raster.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/raster.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/raster.fragment.glsl'),
+    vertexSource: require('src/raster.vertex.glsl')
   },
   icon: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/icon.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/icon.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/icon.fragment.glsl'),
+    vertexSource: require('src/icon.vertex.glsl')
   },
   sdf: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/sdf.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/sdf.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/sdf.fragment.glsl'),
+    vertexSource: require('src/sdf.vertex.glsl')
   },
   collisionbox: {
-    fragmentSource: fs.readFileSync(path.join(__dirname, 'src/collisionbox.fragment.glsl'), 'utf8'),
-    vertexSource: fs.readFileSync(path.join(__dirname, 'src/collisionbox.vertex.glsl'), 'utf8')
+    fragmentSource: require('src/collisionbox.fragment.glsl'),
+    vertexSource: require('src/collisionbox.vertex.glsl')
   }
 };
 
-module.exports.util = fs.readFileSync(path.join(__dirname, 'util.vertex.glsl'), 'utf8');
+module.exports.util = require('util.vertex.glsl');
